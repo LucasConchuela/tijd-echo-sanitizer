@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tijd & Lecho Article Redirector
 // @namespace    https://github.com/LucasConchuela/tijd-echo-sanitizer
-// @version      1.0
+// @version      1.1
 // @description  Automatically appends a 1 to article URLs on tijd.be and lecho.be to bypass restrictions
 // @author       LucasConchuela
 // @match        *://www.tijd.be/*
@@ -23,7 +23,9 @@
     // Check if the URL ends exactly with .html
     // This automatically prevents an infinite loop on .html1 pages
     if (currentUrl.endsWith('.html')) {
-        // Instantly replace the current URL with the new one
+        // Stop page loading first — required for Chrome, where location.replace
+        // at document-start can be ignored if the page hasn't committed yet
+        window.stop();
         window.location.replace(currentUrl + '1');
     }
 })();
