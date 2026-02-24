@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tijd & Lecho Article Redirector
 // @namespace    https://github.com/LucasConchuela/tijd-echo-sanitizer
-// @version      1.3
+// @version      1.4
 // @description  Automatically appends a 1 to article URLs on tijd.be and lecho.be to bypass restrictions
 // @author       LucasConchuela
 // @match        *://www.tijd.be/*
@@ -10,8 +10,6 @@
 // @grant        none
 // @homepageURL  https://github.com/LucasConchuela/tijd-echo-sanitizer
 // @supportURL   https://github.com/LucasConchuela/tijd-echo-sanitizer/issues
-// @updateURL    https://raw.githubusercontent.com/LucasConchuela/tijd-echo-sanitizer/main/tijd-lecho-redirector.user.js
-// @downloadURL  https://raw.githubusercontent.com/LucasConchuela/tijd-echo-sanitizer/main/tijd-lecho-redirector.user.js
 // @license      MIT
 // ==/UserScript==
 
